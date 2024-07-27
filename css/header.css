@@ -279,5 +279,6 @@ header .right-side {
 .header-list {
   display: flex;
   color: aliceblue;
-  gap: 12px;
+  gap: 12px
+
 }
