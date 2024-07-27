@@ -25,11 +25,11 @@
   background-position: center;
 }
 .open-menu-btn {
-  border: none;
+  /* border: none; */
   background-color: transparent;
 }
 .close-menu-btn {
-  border: none;
+  /* border: none; */
   background-color: transparent;
 }
 
@@ -75,7 +75,7 @@
  .menu-m{
   margin-top: 40px;
 } 
-.menu-m a {
+ .menu-m a {
   display: flex;
   align-items: center;
   color: black;
@@ -109,199 +109,129 @@
   display: none;
 }
 
-/* ===========mob-menu============ */
 
-@media (min-width: 768px) {
-  .navbar {
-    display: none;
-  }
-
-  .media-m {
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-  .media-m {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 120px;
-  }
-  .logo-modal-header {
-    width: 200px;
-  }
+.mob-icon-link {
+  display: inline-block;
+  padding: 8px 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(12, 12, 12, 0.1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #1E8FF8;
+}
+.mob-icon-link:hover {
+  background-color: rgba(223, 219, 219, 0.51);
+}
+.mob-icon-link:hover .icon-social-header,
+.mob-icon-link:focus .icon-social-header {
+  fill: #1E8FF8;
 }
 
-@media (min-width: 1280px) {
-  #burger {
-    display: none;
-  }
-  .navbar {
-    display: block;
-  }
-
-  .header-list {
-    display: flex;
-    gap: 40px;
-  }
-
-  .header-address {
-    font-style: normal;
-    display: block;
-  }
-  .address-list {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-  }
-  .mob-icon-link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .mob-icon-link:hover .icon-social-header,
-  .mob-icon-link:focus .icon-social-header {
-    fill: #3350e9;
-  }
-  .nav-menu-item {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 129%;
-    padding: 15px 15px;
-    display: inline-block;
-    position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-  }
-  .nav-menu-item:hover {
-    color: #3350e9;
-  }
-  .current::after {
-    content: "";
-    display: none;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #3350e9;
-    position: absolute;
-    bottom: 5px;
-  }
-  .current {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .nav-menu-item:hover::after,
-  .nav-menu-item:focus::after,
-  .nav-menu-item:active::after {
-    content: "";
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #3350e9;
-    position: absolute;
-    bottom: 5px;
-  }
-  .address-box {
-    display: block;
-  }
-  .open-menu-btn {
-    display: none;
-  }
-  .mob-icon-link {
-    display: inline-block;
-    padding: 8px 8px;
-    border-radius: 10px;
-    border: 1px solid rgba(12, 12, 12, 0.1);
-  }
-  .mob-icon-link:hover {
-    background-color: rgba(223, 219, 219, 0.51);
-  }
+.nav-menu-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 129%;
+  padding: 15px 15px;
+  display: inline-block;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
-
-.open-menu-btn {
-  border: none;
-  background-color: transparent;
+.nav-menu-item:hover {
+  color: #3350e9;
 }
-.close-menu-btn {
-  border: none;
-  background-color: transparent;
-}
-
-.navbar,
-.header-address {
+.current::after {
+  content: "";
   display: none;
-}
-
-.open-menu-btn {
-  border: none;
-  background-color: white;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
+  background-color: #3350e9;
+  position: absolute;
+  bottom: 5px;
 }
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
+.current {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-menu-item:hover::after,
+.nav-menu-item:focus::after,
+.nav-menu-item:active::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #3350e9;
+  position: absolute;
+  bottom: 5px;
 }
 
-
-
-
+.icon-social-list{
+  display: flex;
+  gap: 12px;
+}
 
 
 header {
   position: relative;
   margin-top: 20px;
+
 }
 
 header .header-line {
   padding: 15px 30px;
   border-radius: 50px;
   position: absolute;
+
 }
+
+
 
 header .left-side {
   padding: 25px 30px;
   background-color: #6907A8;
-  left: -40px;
+  left: -50px;
   right: 10%;
 }
 
 header .middle-side {
   background-color: #31323D;
   border-left: 2px solid #fe7524;
-  padding: 40px 30px;
+  padding: 20px 30px;
   right: -100%;
   left: 40%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
+  
 }
 
-header .navbar-menu > a {
-  text-decoration: none;
-  color: white;
-}
+
 
 header .right-side {
   background-color: #171924;
   border-left: 2px solid #6907A8;
 
-  padding: 30px 30px;
+  padding: 25px 30px;
   right: -100%;
   left: 20%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
 }
-.navbar a{
-  margin-right: 20px;
+.right-side{
+  display: flex;
+  gap: 50px;
+  align-items: center;
 }
 .mob-icon-team-media{
   display: flex;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1280px) {
   .header-wrapper {
     position: absolute;
     width: 102%;
@@ -324,69 +254,30 @@ header .right-side {
     background-color: transparent;
     position: unset;
   }
+  .open-menu-btn {
+    /* border: none; */
+    background-color: white;
+    border-radius: 50%;
+  }
+
+header .right-side {
+  background-color: #171924;
+  border-left: 2px solid #6907A8;
+  padding: 26px 28px;
+  right: -100%;
+  top: 34%;
+  z-index: 2;
 }
 
-
-
-
-
-
-
-
-.header {
+.close-menu-btn {
+  /* border: none; */
+  background-color: transparent;
 }
-.container {
+
 }
-.header-container {
-}
-.logo-modal-header {
-}
-.js-open-menu {
-}
-.open-menu-btn {
-}
-.navbar {
-}
+
 .header-list {
   display: flex;
   color: aliceblue;
   gap: 12px;
-
 }
-.nav-menu-item {
-}
-.current {
-}
-.address-box {
-}
-.address-list {
-}
-.mob-icon-team-media {
-}
-.mob-icon-link {
-}
-.icon-social-header {
-}
-.language-switcher {
-}
-.header-language-switcher {
-}
-.translate-icon {
-}
-.language-menu {
-}
-.parent {
-}
-.switch {
-}
-.switcher {
-}
-.dark {
-}
-.night {
-}
-.icon-switch {
-}
-.sun {
-}
-/*-------MOB-MENU--------*/
