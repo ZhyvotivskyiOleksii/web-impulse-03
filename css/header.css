@@ -299,3 +299,59 @@ width: 100%;
 .sun {
 }
 /*-------MOB-MENU--------*/
+@media (min-width: 768px) {
+.navbar-m {
+  display: none;
+}
+.js-menu-container {
+}
+.mobile-menu-box {
+}
+.logo-menu-mob {
+}
+.js-close-menu {
+}
+.close-menu-btn {
+}
+.menu-m {
+}
+.language-switcher {
+}
+.mobile-language-switcher {
+}
+.icon-container {
+}
+.icon {
+}
+.language-menu {
+}
+.mobile-parent {
+}
+.switch {
+}
+.switcher {
+}
+.dark {
+}
+.night {
+}
+.icon-switch {
+}
+.sun {
+}
+.gift-title {
+}
+.nav-mob-contakt {
+}
+.mob-address-list {
+}
+.mob-contact {
+}
+.mob-menu-address {
+}
+.active {
+}
+.media-m {
+}
+.form-icon {
+}
