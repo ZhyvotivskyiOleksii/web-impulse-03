@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="/svg/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,800;1,800&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modal-block.css" />
+    <link rel="stylesheet" href="./css/button-media.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/len.css" />
+    <link rel="stylesheet" href="./css/animation-hero.css" />
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/company.css" />
+    <link rel="stylesheet" href="./css/construction.css" />
+    <link rel="stylesheet" href="./css/partners.css" />
+    <link rel="stylesheet" href="./css/revie.css">
+    <link rel="stylesheet" href="./css/card-impuls.css">
+    <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" href="./css/Cookies.css">
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/services/prices.css" />
+    <link rel="stylesheet" href="./css/services/services.css" />
+    <link rel="stylesheet" href="./css/reviews.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/policy.css" />
+    <link rel="stylesheet" href="./css/dark-mod.css" />
+
+
+
+    <title>Web-Impuls</title>
+</head>
+
+<body>
+    <!-- ==========================header============================== -->
+    <header class="header">
+      <div class="container header-container">
+        <a href="./index.html"><img id="logoHeader" class="logo-modal-header" src="./svg/logo-en.svg"
+            alt="logo-modal"></a>
+  
+        <button class="js-open-menu open-menu-btn" type="button"><img id="burger" src="../images/burger.svg" /></button>
+  
+        <nav class="navbar">
+          <ul class="header-list">
+            <li><a href="./services.html" class="nav-menu-item current" data-translate-key="services">Послуги</a></li>
+            <li><a href="./prices.html" class="nav-menu-item current" data-translate-key="prices">Ціни</a></li>
+            <li><a href="./reviews.html" class="nav-menu-item current" data-translate-key="reviews">Відгуки</a></li>
+            <li><a href="./contact.html" class="nav-menu-item current" data-translate-key="contact">Контакт</a></li>
+            <!-- <li><a href="./promotions.html" class="nav-menu-item current" data-translate-key="promotions">Акції</a></li> -->
+          </ul>
+        </nav>
+  
+        <div class="address-box">
+          <ul class="address-list">
+            <li class="mob-icon-team-media">
+              <a href="https://www.facebook.com/people/Web-impuls/61559794323482/?mibextid=LQQJ4d" target="_blank"
+                class="mob-icon-link">
+                <svg class="icon-social-header" width="21" height="21">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon-team-media">
+              <a href="https://www.linkedin.com/in/oleksiy-zhivotivsky-9b9085303/" target="_blank" class="mob-icon-link">
+                <svg class="icon-social-header" width="21" height="21">
+                  <use href="./images/icons.svg#icon-linkedin2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon-team-media">
+              <a href="https://github.com/ZhyvotivskyiOleksii" target="_blank" class="mob-icon-link">
+                <svg class="icon-social-header" width="22" height="22">
+                  <use href="./images/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="language-switcher header-language-switcher">
+          <button id="languageButtonHeader">
+              <img class="translate-icon" src="./svg/translate.svg" width="35" height="60" alt="Language" class="icon">
+              <span id="titleHeader">Language</span>
+          </button>
+          <div id="languageMenuHeader" class="language-menu">
+            <a href="#" data-lang="en"><img src="./svg/usa.svg" width="20" height="20" alt="English"> English</a>
+            <a href="#" data-lang="pl"><img src="./svg/poland.svg" width="20" height="20" alt="Polski"> Polish</a>
+            <a href="#" data-lang="uk"><img src="./svg/ua.svg" width="22" height="22" alt="Українська"> Українська</a>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="switch">
+            <div class="switcher dark"></div>
+            <div class="night">
+              <img src="/svg/moon.svg" alt="moon icon" class="icon-switch">
+            </div>
+            <div class="sun">
+              <img src="/svg/sun.svg" alt="sun icon" class="icon-switch">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <!-- ==================mob-menu======================== -->
+    <nav class="navbar-m js-menu-container">
+      <div class="mobile-menu-box">
+  
+        <!-- <img id="logoMobile" class="logo-menu-mob" src="./svg/logo-modal.svg" alt="logo-modal"> -->
+        <a href="./index.html"><img id="logoMobile" class="logo-menu-mob" src="./svg/logo-en.svg" alt="logo-modal"></a>
+  
+        <button class="js-close-menu close-menu-btn" type="button"><img id="burger"
+            src="../images/menu-of.svg" /></button>
+      </div>
+  
+      <div class="menu-m">
+        <div class="language-switcher mobile-language-switcher">
+          <button id="languageButtonMobile">
+            <div class="icon-container">
+              <img src="./svg/translate.svg" width="80" height="30" alt="Language" class="icon">
+              <p id="titleMobile">Language</p>
+            </div>
+          </button>
+          <div id="languageMenuMobile" class="language-menu">
+            <a href="#" data-lang="en"><img src="./svg/usa.svg" width="20" height="20" alt="English"> English</a>
+            <a href="#" data-lang="pl"><img src="./svg/poland.svg" width="20" height="20" alt="Polski"> Polish</a>
+            <a href="#" data-lang="uk"><img src="./svg/ua.svg" width="22" height="22" alt="Українська"> Українська</a>
+          </div>
+          <div class="mobile-parent">
+            <div class="switch">
+              <div class="switcher dark"></div>
+              <div class="night">
+                <img src="/svg/moon.svg" alt="moon icon" class="icon-switch">
+              </div>
+              <div class="sun">
+                <img src="/svg/sun.svg" alt="sun icon" class="icon-switch">
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <a href="./services.html">
+              <img src="../svg/menu-cheader.svg" width="30" height="30" alt="Главная">
+              <span class="gift-title" data-translate-key="services">Послуги</span>
+            </a>
+          </li>
+          <li>
+            <a href="./prices.html">
+              <img src="../images/onas.svg" width="30" height="30" alt="Главная">
+              <span class="gift-title" data-translate-key="prices">Ціни</span>
+            </a>
+          </li>
+          <li>
+            <a href="./reviews.html">
+              <img src="../images/blog.svg" width="30" height="30" alt="Главная">
+              <span class="gift-title" data-translate-key="reviews">Відгуки</span>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html">
+              <img src="../images/contact.svg" width="30" height="30" alt="Главная">
+              <span class="gift-title" data-translate-key="contact">Контакт</span>
+            </a>
+          </li>
+          <li>
+            <!-- <a href="./promotions.html">
+              <img src="../svg/gift.svg" width="30" height="30" alt="Главная">
+              <span class="gift-title" data-translate-key="promotions">Акції</span>
+            </a> -->
+          </li>
+        </ul>
+      </div>
+  
+      <div class="nav-mob-contakt">
+        <ul class="mob-address-list">
+          <li class="mob-contact"><a href="tel:+48796238044" class="mob-menu-address active">+48 572 245 57</a></li>
+          <li class="mob-contact"><a href="mailto:info@web-impuls.com" class="mob-menu-address">info@web-impuls.com</a>
+          </li>
+          <li>
+            <p>Warszawa Mazovia</p>
+          </li>
+        </ul>
+      </div>
+      <div class="media-m">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/people/Web-impuls/61559794323482/?mibextid=LQQJ4d" target="_blank"
+              class="form-icon">
+              <img src="../svg/form.fb.svg" width="75" alt="fb">
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/WebImpuls" target="_blank" class="form-icon">
+              <img src="../svg/form-tel.svg" width="75" alt="Иконка">
+            </a>
+          </li>
+          <li>
+            <a href="https://example.com" target="_blank" class="form-icon">
+              <img src="../svg/form-wat.svg" width="75" alt="Иконка">
+            </a>
+          </li>
+          <a href="https://www.linkedin.com/in/oleksiy-zhivotivsky-9b9085303/" target="_blank" class="form-icon">
+            <img src="./svg/linkedin.svg" width="75" alt="Иконка">
+          </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+    
+      <main>
+        
+
+
+        <section class="policy">
+          <div class="container policy-container">
+              <h2 data-translate-key="privacy-policy-title">Privacy Policy</h2>
+              <p class="policy-section" data-translate-key="privacy-intro">
+                  Вступ
+                  Компанія Web Impuls Sp. z o.o. (далі "Компанія", "ми", "наш") дбає про захист персональних даних своїх Клієнтів, Партнерів і Користувачів (далі "Ви", "Користувач") і дотримується принципів конфіденційності та захисту персональних даних. Ця політика конфіденційності має на меті інформувати Вас про те, які персональні дані ми збираємо, як ми їх обробляємо та які права Ви маєте у зв'язку з обробкою персональних даних Компанією.
+              </p>
+              <p class="policy-section">
+                  <strong data-translate-key="data-controller-title">Адміністратор даних</strong><br>
+                  <span data-translate-key="data-controller-content">Адміністратором персональних даних є компанія Web Impuls NIP: 5223251351, REGON: 524650407, з місцезнаходженням за адресою Warszawa, Edwarda Habicha 18/ 02-495</span>
+              </p>
+              <p class="policy-section">
+                  <strong data-translate-key="data-processing-purposes-title">Цілі обробки персональних даних</strong><br>
+                  <span data-translate-key="data-processing-purposes-content">
+                      Компанія обробляє персональні дані з метою:
+                      <ul>
+                          <li data-translate-key="data-processing-purpose1">Виконання договорів та надання послуг.</li>
+                          <li data-translate-key="data-processing-purpose2">Обслуговування Клієнтів та Партнерів, включаючи надання інформації, розгляд скарг та запитів.</li>
+                          <li data-translate-key="data-processing-purpose3">Управління запитами та контактами, включаючи прямий маркетинг.</li>
+                          <li data-translate-key="data-processing-purpose4">Забезпечення безпеки наших послуг та інформаційних систем.</li>
+                          <li data-translate-key="data-processing-purpose5">Розгляду скарг та претензій.</li>
+                      </ul>
+                  </span>
+              </p>
+              <p class="policy-section-con">
+                  <strong data-translate-key="data-types-title">Види персональних даних</strong><br>
+                  <span data-translate-key="data-types-content">
+                      Компанія обробляє наступні категорії персональних даних:
+                      <ul>
+                          <li data-translate-key="data-type1">Ідентифікаційні дані, такі як ім'я, прізвище, адреса, ідентифікаційний номер платника податків (ІПН).</li>
+                          <li data-translate-key="data-type2">Контактні дані, такі як адреса електронної пошти, номер телефону.</li>
+                          <li data-translate-key="data-type3">Інформація щодо замовлень, транзакцій та платежів.</li>
+                      </ul>
+                  </span>
+              </p>
+              <p class="con-policy">
+                  <strong data-translate-key="legal-basis-title">Правова основа обробки даних</strong><br>
+                  <span data-translate-key="legal-basis-content">
+                      Обробка персональних даних здійснюється на підставі:
+                      <ul>
+                          <li data-translate-key="legal-basis1">Виконання договору, укладеного з Клієнтом або Партнером.</li>
+                          <li data-translate-key="legal-basis2">Правомірного інтересу на обробку даних для реалізації законних інтересів Компанії.</li>
+                          <li data-translate-key="legal-basis3">Згоди, наданої Користувачем.</li>
+                      </ul>
+                  </span>
+              </p>
+              <p class="policy-section" data-translate-key="data-retention-title">
+                  <strong>Період зберігання даних</strong><br>
+                  Персональні дані зберігаються протягом періоду, необхідного для досягнення цілей, для яких вони були зібрані, а також відповідно до чинного законодавства.
+              </p>
+              <p class="policy-section">
+                  <strong data-translate-key="data-transfer-title">Передача персональних даних</strong><br>
+                  <span data-translate-key="data-transfer-content">Персональні дані можуть бути передані суб'єктам, які обробляють дані від імені Компанії (наприклад, постачальникам ІТ-послуг) та державним органам на їх вимогу, відповідно до чинного законодавства.</span>
+              </p>
+              <p class="policy-section">
+                  <strong data-translate-key="user-rights-title">Права Користувачів</strong><br>
+                  <span data-translate-key="user-rights-content">Користувачі мають право на доступ до своїх персональних даних, їх виправлення, видалення, обмеження обробки та перенесення даних. Вони також мають право подати скаргу до наглядового органу з питань захисту персональних даних.</span>
+              </p>
+              <p class="policy-section">
+                  <strong data-translate-key="data-security-title">Безпека даних</strong><br>
+                  <span data-translate-key="data-security-content">Компанія вживає відповідних технічних та організаційних заходів для захисту персональних даних від несанкціонованого доступу, втрати або знищення.</span>
+              </p>
+              <p class="policy-section contact-info">
+                  <strong data-translate-key="contact-title">Контакт</strong><br>
+                  <span data-translate-key="contact-content">У разі питань щодо обробки персональних даних та для реалізації своїх прав, будь ласка, зв'яжіться з нами за адресою: Edwarda Habicha 18/ 02-495, Варшава, або електронною поштою за адресою: contact@webimpuls.com.</span>
+              </p>
+              <p class="policy-section" data-translate-key="policy-update">
+                  Ця політика конфіденційності може зазнавати змін та оновлень, тому, будь ласка, регулярно перевіряйте її. Останнє оновлення: 15.07.2024 р.
+              </p>
+              <p data-translate-key="thanks">
+                  Дякуємо за використання наших послуг.
+              </p>
+          </div>
+      </section>
+
+
+
+    </main>
+
+    
+
+    <!-------------------------footer----------------->
+
+    <section class="footer">
+      <div class="container footer-container">
+        <a href="#" class="logo-brand">WEB<span class="logo-footer"> IMPULS</span></a>
+                
+                <div class="footer-content">
+                  <ul class="footer-content-list">
+                    <li>
+                      <a href="#">
+                        <img src="/svg/map.svg" width="14px" alt="mapa" class="footer-icon">Warszawa
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="/svg/email.svg" width="20px" alt="email" class="footer-icon">contact@web-impuls.com
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="/svg/phone-foot.svg" width="20px" alt="phone" class="footer-icon">+48 572 245 574
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class="regulamin">
+                  <ul class="regulamin-list">
+                    <li>
+                      <a href="#" target="_blank" class="info-footer">Terms and Conditions</a>
+                    </li>
+                    <li>
+                      <a href="/policy.html" target="_blank" class="info-footer">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank" class="info-footer">Cookie Policy</a>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="payment-footer">
+                  <p>Web Impuls NIP: 
+                    5223251351, REGON: 524650407 Warszawa, Edwarda Habicha 18/ 02-495</p>
+                    <div class="card-pey">
+                      <img class="footer-img-pey-1" src="/svg/payments-1.svg" width="38" height="38" alt="visa">
+                      <img class="footer-img-pey-2" src="/svg/payments-2.svg" width="49" height="16" alt="visa">
+                      <img class="footer-img-pey-3" src="/svg/mastercard.svg" width="91" height="16" alt="mastercard">
+                      <img class="footer-img-pey-4" src="/svg/masterkard.svg" width="141" height="16" alt="mastercard">
+                    </div>
+                </div>
+                
+              
+                  <div class="call-to-action">
+                    <span class="call-text">Контакт</span>
+                    <img src="/svg/arow.svg" alt="Стрелка" class="arrow-icon">
+                  </div>
+      </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =================button-soc-media================== -->
+    <div class="multibutton">
+        <ul class="multibutton__list">
+            <li class="multibutton__item">
+                <a href="https://www.facebook.com/people/Web-impuls/61559794323482/?mibextid=LQQJ4d"><img
+                        src="/svg/messenger.svg" width="60" height="60" alt="massanger"></a>
+            </li>
+            <li class="multibutton__item">
+                <a href="tel:+48572245574"><img src="/svg/viber.svg" width="60" height="60" alt="viber"></a>
+            </li>
+            <li class="multibutton__item">
+                <a href="https://t.me/WebImpuls"><img src="/svg/telegram.svg" width="60" height="60" alt="telegram"></a>
+            </li>
+            <li class="multibutton__item">
+                <a href="tel:+48572245574"><img src="/svg/phone.svg" width="60" height="60" alt="phone"></a>
+            </li>
+        </ul>
+
+        <div class="multibutton__button">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 512.076 512.076" style="enable-background: new 0 0 512.076 512.076"
+                xml:space="preserve">
+                <g transform="translate(-1 -1)">
+                    <g>
+                        <g>
+                            <path d="M499.639,396.039l-103.646-69.12c-13.153-8.701-30.784-5.838-40.508,6.579l-30.191,38.818
+                c-3.88,5.116-10.933,6.6-16.546,3.482l-5.743-3.166c-19.038-10.377-42.726-23.296-90.453-71.04s-60.672-71.45-71.049-90.453
+                l-3.149-5.743c-3.161-5.612-1.705-12.695,3.413-16.606l38.792-30.182c12.412-9.725,15.279-27.351,6.588-40.508l-69.12-103.646
+                C109.12,1.056,91.25-2.966,77.461,5.323L34.12,31.358C20.502,39.364,10.511,52.33,6.242,67.539
+                c-15.607,56.866-3.866,155.008,140.706,299.597c115.004,114.995,200.619,145.92,259.465,145.92
+                c13.543,0.058,27.033-1.704,40.107-5.239c15.212-4.264,28.18-14.256,36.181-27.878l26.061-43.315
+                C517.063,422.832,513.043,404.951,499.639,396.039z M494.058,427.868l-26.001,43.341c-5.745,9.832-15.072,17.061-26.027,20.173
+                c-52.497,14.413-144.213,2.475-283.008-136.32S8.29,124.559,22.703,72.054c3.116-10.968,10.354-20.307,20.198-26.061
+                l43.341-26.001c5.983-3.6,13.739-1.855,17.604,3.959l37.547,56.371l31.514,47.266c3.774,5.707,2.534,13.356-2.85,17.579
+                l-38.801,30.182c-11.808,9.029-15.18,25.366-7.91,38.332l3.081,5.598c10.906,20.002,24.465,44.885,73.967,94.379
+                c49.502,49.493,74.377,63.053,94.37,73.958l5.606,3.089c12.965,7.269,29.303,3.898,38.332-7.91l30.182-38.801
+                c4.224-5.381,11.87-6.62,17.579-2.85l103.637,69.12C495.918,414.126,497.663,421.886,494.058,427.868z">
+                            </path>
+                            <path
+                                d="M291.161,86.39c80.081,0.089,144.977,64.986,145.067,145.067c0,4.713,3.82,8.533,8.533,8.533s8.533-3.82,8.533-8.533
+                c-0.099-89.503-72.63-162.035-162.133-162.133c-4.713,0-8.533,3.82-8.533,8.533S286.448,86.39,291.161,86.39z">
+                            </path>
+                            <path d="M291.161,137.59c51.816,0.061,93.806,42.051,93.867,93.867c0,4.713,3.821,8.533,8.533,8.533
+                c4.713,0,8.533-3.82,8.533-8.533c-0.071-61.238-49.696-110.863-110.933-110.933c-4.713,0-8.533,3.82-8.533,8.533
+                S286.448,137.59,291.161,137.59z"></path>
+                            <path
+                                d="M291.161,188.79c23.552,0.028,42.638,19.114,42.667,42.667c0,4.713,3.821,8.533,8.533,8.533s8.533-3.82,8.533-8.533
+                c-0.038-32.974-26.759-59.696-59.733-59.733c-4.713,0-8.533,3.82-8.533,8.533S286.448,188.79,291.161,188.79z">
+                            </path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <!-- ======================modal-block======================== -->
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <img class="logo-modal" src="./svg/logo-en.svg" alt="logo-modal">
+
+            <button type="button" data-modal-close class="modal-close-btn">
+                <svg class="modal-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <p class="text-modal" data-translate-key="text-modal">Залиште свої контакти і ми вам передзвонимо</p>
+
+            <form class="modal-form">
+                <div class="modal-form-div">
+                    <label for="user-name" class="modal-label" data-translate-key="label-name">Ім'я</label>
+                    <div class="modal-input-wrap">
+                        <input type="text" class="modal-input" name="user-name" id="user-name" />
+                        <svg class="modal-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-person-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-div">
+                    <label for="user-phone" class="modal-label" data-translate-key="label-phone">Телефон</label>
+                    <div class="modal-input-wrap">
+                        <input type="tel" class="modal-input" name="user-phone" id="user-phone" />
+                        <svg class="modal-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-div">
+                    <label for="user-email" class="modal-label" data-translate-key="label-email">E-mail</label>
+                    <div class="modal-input-wrap">
+                        <input type="email" class="modal-input" name="user-email" id="user-email" />
+                        <svg class="modal-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-comment-div">
+                    <label for="user-comment" class="modal-label" data-translate-key="label-comment">Коментар</label>
+                    <textarea name="user-comment" id="user-comment" placeholder="Введіть ваш текст"
+                        class="text-input"></textarea>
+                </div>
+
+                <div class="checkbox-form-div">
+                    <input type="checkbox" name="user-privacy" id="user-privacy" class="modal-check visually-hidden"
+                        value="true" />
+                    <label for="user-privacy" class="check-text">
+                        <span class="span-checkbox">
+                            <svg class="modal-checkbox-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-vector"></use>
+                            </svg>
+                        </span>
+                        <span data-translate-key="checkbox-text">
+                            I accept the terms and conditions of the
+                            <a href="#" class="link-policy" data-translate-key="link-policy">Privacy Policy</a>
+                        </span>
+                    </label>
+                </div>
+                <button class="send-button" type="submit" data-translate-key="send-button">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ======================Cookies==================== -->
+    <div class="wrapper">
+        <div class="title-box">
+            <i class="bx bx-cookie"></i>
+            <h3 data-translate-key="cook-trans">Згода на файли cookie</h3>
+        </div>
+        <div class="info">
+            <p data-translate-key="cook-trans1">
+                Цей вебсайт використовує файли cookie, щоб допомогти вам мати кращий і більш релевантний досвід
+                перегляду на
+                вебсайті. <a href="#" data-translate-key="cook-trans2"> Дізнатися більше...</a></p>
+
+        </div>
+        <div class="buttons">
+            <button class="button" id="acceptBtn" data-translate-key="cook-trans3">Прийняти</button>
+            <button class="button" data-translate-key="cook-trans4">Відхилити</button>
+        </div>
+    </div>
+
+
+
+</body>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+
+<script src="./js/media-button.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/bilding.js"></script>
+<script src="./js/modal.js"></script>
+<script src="./js/map.js"></script>
+<script src="./js/translate.js"></script>
+<script src="./js/Cookies.js"></script>
+<script src="./js/dark-mod.js"></script>
+
+
+</html>

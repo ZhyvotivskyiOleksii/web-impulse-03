@@ -1,0 +1,161 @@
+.map-title{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "FuturaPT3",sans-serif;
+}
+
+.world-map{
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.pin{
+    background: #1b70f8;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: highlight 2s linear infinite;
+}
+
+@keyframes highlight{
+    100%{
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+.pin span{
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform:  translateY(-50%);
+    background: #FFF;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 10px;
+}
+
+.marker1{
+    top: 60%;
+    left: 21%;
+} 
+
+.marker2{
+    top: 45%;
+    left: 48%;
+}
+
+.marker3{
+    top: 23%;
+    left: 52%;
+}
+
+.marker4{
+    top: 78%;
+    left: 53%;
+}
+.marker5{
+    top: 71%;
+    left: 29%;
+}
+.marker6{
+    top: 42%;
+    left: 74%;
+}
+
+.marker7{
+    top: 20%;
+    left: 15%;
+} 
+
+/* .marker8{
+    top: 75%;
+    left: 90%;
+}  */
+
+.marker9{
+    top: 23%;
+    left: 80%;
+} 
+
+
+ @media (min-width: 768px){
+    
+    .marker1{
+    top: 60%;
+    left: 21%;
+}
+
+.marker2{
+    top: 45%;
+    left: 48%;
+}
+
+.marker3{
+    top: 23%;
+    left: 52%;
+}
+
+.marker4{
+    top: 78%;
+    left: 53%;
+}
+.marker5{
+    top: 71%;
+    left: 29%;
+}
+.marker6{
+    top: 42%;
+    left: 74%;
+}
+
+.marker7{
+    top: 20%;
+    left: 15%;
+}
+
+.marker8{
+    top: 75%;
+    left: 90%;
+}
+
+.marker9{
+    top: 23%;
+    left: 80%;
+}
+
+} 
+
+@media (min-width: 768px){
+    .pin{
+        background: #1b70f8;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        animation: highlight 2s linear infinite;
+    }
+    .pin span{
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform:  translateY(-50%);
+        background: #FFF;
+        border-radius: 5px;
+        padding: 2px;
+        font-size: 14px;
+    }
+}

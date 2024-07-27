@@ -1,0 +1,83 @@
+.multibutton {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 70px;
+    height: 70px;
+    transition: 0.2s ease;
+}
+
+.multibutton .multibutton__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 0px;
+    bottom: 80px;
+    visibility: hidden; 
+    opacity: 0; 
+    transition: visibility 0s 0.3s, opacity 0.3s ease;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.multibutton.active .multibutton__list {
+    visibility: visible; 
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+}
+
+.multibutton__item {
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.multibutton.active .multibutton__item {
+    transform: translateY(0); 
+    opacity: 1;
+    visibility: visible;
+}
+
+.multibutton__button {
+    width: 70px;
+    height: 70px;
+    background: #046fe2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: animation_button 3s linear infinite;
+    transition: all 200ms ease-out;
+}
+
+@keyframes animation_button {
+    0% {
+        box-shadow: 0 0 0 0 #ffba26, 0 0 0 0 rgba(255, 206, 9, 0.7);
+    }
+    40% {
+        box-shadow: 0 0 0 13.62667px rgba(255,186, 38, 0), 0 0 0 6.81333px rgba(255, 206, 9, 0.7);
+    }
+    80% {
+        box-shadow: 0 0 0 27.25333px rgba(255, 186, 38, 0), 0 0 0 13.62667px rgba(255,206, 9, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 34.06667px rgba(255, 186, 38, 0), 0 0 0 27.25333px rgba(255, 206, 9, 0);
+    }
+}
+
+
+.multibutton__button svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+}

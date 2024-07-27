@@ -1,0 +1,406 @@
+.reviews-hero{
+    padding-top: 60px;
+
+}
+.reviews-title{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: "FuturaPT2",sans-serif;
+    font-size: 25px;
+}
+.reviews-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.review-block {
+    flex: 1;
+    padding: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.facebook {
+    background-color: #2b61d7;
+}
+
+.google {
+    background-color: #1e8ff8; 
+}
+
+
+
+.review-block p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.review-block h2{
+    font-size: 35px;
+    font-family: "FuturaPT2",sans-serif;
+}
+.review-block .rating {
+    font-size: 25px;
+    font-weight: bold;
+}
+.rating{
+    font-family: "FuturaPT2",sans-serif;
+}
+
+
+
+
+.customer-reviews {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    
+}
+.review-item{
+    width: calc((100% - 10px) / 2);
+}
+.reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(2, calc((100% - 2 * 10px) / 2)); */
+    gap: 10px;
+}
+
+
+.review-item h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.stars {
+    margin-bottom: 10px;
+    display: flex;
+
+}
+
+.stars img {
+    width: 14px; /* Adjust the size as necessary */
+}
+
+.review-text {
+    background-color: #ffc400a3;
+    padding: 9px;
+    border-radius: 10px;
+    position: relative;
+    font-size: 13px;
+    color: black;
+    text-align: left;
+}
+
+.review-text::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffc400a3;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+
+.leave-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.leave-review a {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.google-button {
+    background-color: #1e8ff8; 
+}
+
+.google-button:hover {
+    background-color: #357ae8;
+}
+
+.facebook-button {
+    background-color: #2b61d7; 
+}
+
+.facebook-button:hover {
+    background-color: #2d4373; 
+}
+
+.google-text {
+    display: block;
+    font-size: 27px;
+    font-weight: bold;
+    color: white; 
+    font-family: "FuturaPT2",sans-serif;
+}
+
+.facebook-text {
+    display: block;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    font-family: "FuturaPT2",sans-serif;
+}
+
+
+
+
+
+@media (min-width: 768px){
+     .reviews-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .rewiews-title{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-family: "FuturaPT2",sans-serif;
+        font-size: 25px;
+    }
+    .reviews-hero{
+        padding-top: 160px;
+        padding-bottom: 60px;
+    }
+    .rewiews-title{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-family: "FuturaPT2",sans-serif;
+        font-size: 35px;
+    }
+    .reviews-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .customer-reviews {
+        text-align: center;
+        margin: 20px;
+    }
+    
+    .reviews-grid {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    
+    /* .review-item {
+        background-color: #dfdfdd;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        text-align: left;
+    }  */
+    
+    .review-item h3 {
+        margin-bottom: 5px;
+        font-size: 24px;
+        text-align: left;
+    }
+    
+    .stars {
+        margin-bottom: 10px;
+        display: flex;
+    
+    }
+    
+    .stars img {
+        width: 16px; /* Adjust the size as necessary */
+    }
+    
+    .review-text {
+        background-color: #ffc400a3;
+        padding: 9px;
+        border-radius: 10px;
+        position: relative;
+        font-size: 18px;
+        color: black;
+        text-align: left;
+    }
+    
+    .review-text::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #ffc400a3;
+        position: absolute;
+        top: -10px;
+        left: 20px;
+    }
+    .leave-review {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+}
+
+
+
+
+@media (min-width: 1280px){
+    .reviews-hero{
+        padding-top: 160px;
+    
+    }
+    .rewiews-title{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-family: "FuturaPT2",sans-serif;
+    }
+    .reviews-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .review-block {
+        flex: 1;
+        padding: 20px;
+        color: white;
+        margin-bottom: 10px;
+    }
+    
+    .facebook {
+        background-color: #2b61d7;
+    }
+    
+    .google {
+        background-color: #1e8ff8; 
+    }
+    
+    
+    
+    .review-block p {
+        margin: 10px 0;
+        font-size: 22px;
+    }
+    .review-block h2{
+        font-size: 45px;
+        font-family: "FuturaPT2",sans-serif;
+    }
+    
+    .review-block .rating {
+        font-size: 30px;
+        font-family: "FuturaPT2",sans-serif;
+    }
+    
+    .rewiews-title{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-family: "FuturaPT2",sans-serif;
+        font-size: 35px;
+    }
+    .reviews-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .customer-reviews {
+        text-align: center;
+        margin: 20px;
+    }
+    
+    .reviews-grid {
+
+        /* grid-template-columns: repeat(4, calc((100% - 4 * 10px) / 4)); */
+        margin: 0 auto;
+    }
+    
+ .review-item {
+        width: calc((100% - 30px) / 4);
+    }  
+    
+    .review-item h3 {
+        margin-bottom: 5px;
+        font-size: 24px;
+        text-align: left;
+    }
+    
+    .stars {
+        margin-bottom: 10px;
+        display: flex;
+    
+    }
+    
+    .stars img {
+        width: 16px; /* Adjust the size as necessary */
+    }
+    
+    .review-text {
+        background-color: #ffc400a3;
+        padding: 9px;
+        border-radius: 10px;
+        position: relative;
+        font-size: 18px;
+        color: black;
+        text-align: left;
+    }
+    
+    .review-text::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #ffc400a3;
+        position: absolute;
+        top: -10px;
+        left: 20px;
+    }
+    .leave-review {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .reviews-title{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-family: "FuturaPT2",sans-serif;
+        font-size: 40px;
+    }
+
+}

@@ -1,0 +1,211 @@
+.construction{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.const-title{
+    display: flex;
+    align-items: center;
+    gap:  12px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+    font-family: "FuturaPT2",sans-serif;
+    justify-content: center;
+}
+
+.const-title::before{
+    content: '';
+    width: 35px;
+    height: 1px;
+    background-color: #1e8ff8;
+    display: block;
+}
+.const-offering{
+    color: #0078ff;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.04em;
+    font-weight: 800;
+    font-family: "FuturaPT2",sans-serif;
+    text-align: center;
+}
+.const-subtitle{
+    text-align: center;
+}
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.step-content li {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    /* text-align: center; */
+}
+
+.step-content h3{
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    font-family: "FuturaPT2",sans-serif;
+    margin-bottom: 8px;
+}
+.step-content p{
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    font-family: "FuturaPT1",sans-serif;
+}
+
+.icon-step {
+
+    flex-shrink: 0; 
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column; 
+    margin: 0 0 0 14px;
+    text-align: left;
+}
+
+
+@media (min-width: 768px){
+    .construction-box{
+        max-width: 768px;
+        padding: 0 25px;
+    }
+    .const-title{
+        display: flex;
+        align-items: center;
+        gap:  12px;
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        margin-bottom: 20px;
+        line-height: 125%;
+        letter-spacing: 0.03em;
+        font-weight: 800;
+        font-family: "FuturaPT2",sans-serif;
+        justify-content: center;
+    }
+    
+    .const-title::before{
+        content: '';
+        width: 50px;
+        height: 1px;
+        background-color: #1e8ff8;
+        display: block;
+    }
+    .const-subtitle{
+        margin-left: auto;
+        margin-right: auto;
+
+        margin-bottom: 25px;
+        font-size: 21px;
+        line-height: 125%;
+        letter-spacing: 0.03em;
+        font-weight: 800;
+        font-family: "FuturaPT1",sans-serif;
+    }
+    .step-content-list h3{
+        font-size: 20px;
+    }
+    .step-content-list p{
+        font-size: 16px;
+    }
+    .construction-box{
+        margin-top: 50px;
+    }
+   
+.step-content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    .step-content-list{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        gap: 12px;
+        width: calc((100% - 72px) / 3);
+    }
+
+}
+
+@media (min-width:1280px){
+    .construction-box{
+        max-width: 1440px;
+    }
+    .const-title{
+        display: flex;
+        align-items: center;
+        gap:  12px;
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        margin-bottom: 20px;
+        line-height: 125%;
+        letter-spacing: 0.03em;
+        font-weight: 800;
+        font-family: "FuturaPT2",sans-serif;
+        justify-content: center;
+    }
+    
+    .const-title::before{
+        content: '';
+        width: 100px;
+        height: 1px;
+        background-color: #1e8ff8;
+        display: block;
+    }
+    .const-offering{
+        color: #0078ff;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: 0.04em;
+        font-weight: 800;
+        font-family: "FuturaPT2",sans-serif;
+        text-align: center;
+    }
+
+    .const-subtitle{
+        margin-left: auto;
+        margin-right: auto;
+
+        margin-bottom: 25px;
+        font-size: 21px;
+        line-height: 125%;
+        letter-spacing: 0.03em;
+        font-weight: 800;
+        font-family: "FuturaPT1",sans-serif;
+    }
+    .step-content-list{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        width: calc((100% - 72px) / 4);
+    }
+    .step-content-list h3{
+        font-size: 22px;
+    }
+    .step-content-list p{
+        font-size: 20px;
+    }
+    .construction-box{
+        margin-top: 50px;
+    }
+
+ 
+}

@@ -1,0 +1,214 @@
+.partners-title {
+    padding-top: 40px;
+  }
+  
+  .slider-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 60px 0;
+    border-bottom: 1px solid #1e8ff8;
+  }
+  
+  .slider {
+    display: flex;
+    white-space: nowrap;
+    will-change: transform;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    position: relative;
+  }
+  
+  .logo {
+    width: 120px;
+    height: 40px;
+    margin: 0 20px;
+    transition: filter 0.3s ease;
+  }
+  
+  .logo:hover {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(78%) saturate(1764%) hue-rotate(175deg) brightness(97%) contrast(101%);
+  }
+  
+  @media (min-width: 1280px) {
+    .logo {
+      width: 240px;
+      height: 50px;
+      margin: 0 20px;
+    }
+  }
+  
+  .partners {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+  }
+  
+  .partners-img {
+    display: none;
+  }
+  
+  .partners-txt {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    font-family: "FuturaPT2", sans-serif;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .partners-txt::before {
+    content: '';
+    width: 35px;
+    height: 1px;
+    background-color: #1e8ff8;
+    display: block;
+  }
+  
+  .partners-title-txt {
+    font-size: 25px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+    font-family: "FuturaPT2", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .partners-container p {
+    margin-bottom: 20px;
+  }
+  
+  .partners-title {
+    font-size: 25px;
+    font-family: 'FuturaPT2', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .partners-sub-title {
+    font-size: 25px;
+    font-family: 'FuturaPT2', sans-serif;
+    color: #1e8ff8;
+  }
+  
+  .partners-box {
+    display: block;
+  }
+  
+  .hero-list::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    border-radius: 14px;
+    border: 3px solid #fff;
+    display: block;
+    background-image: url(../images/tick.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .hero-list:nth-child(1)::before {
+    background-color: #1e8ff8;
+  }
+  
+  .hero-list:nth-child(2)::before {
+    background-color: #4b21f5;
+  }
+  
+  .hero-list:nth-child(3)::before {
+    background-color: #f3c00b;
+  }
+  
+  .hero-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .hero-list:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  
+  @media (min-width: 768px) {
+    .partners-container {
+      max-width: 1440px;
+    }
+    .partners-img {
+      display: flex;
+      width: 300px;
+    }
+    .partners-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+    .partners-txt {
+      font-size: 16px;
+    }
+    .partners-title-txt {
+      font-size: 40px;
+    }
+    .partners-container p {
+      font-size: 20px;
+    }
+    .hero-list {
+      font-size: 20px;
+    }
+    .partners-title, .partners-sub-title {
+      font-size: 40px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .partners-container {
+      max-width: 1440px;
+    }
+    .partners-img {
+      display: flex;
+      width: 450px;
+    }
+    .partners-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 150px;
+    }
+    .partners-txt {
+      font-size: 16px;
+    }
+    .partners-title-txt {
+      font-size: 40px;
+    }
+    .partners-container p {
+      font-size: 20px;
+    }
+    .hero-list {
+      font-size: 20px;
+    }
+    .partners-title, .partners-sub-title {
+      font-size: 40px;
+    }
+    .partners-title {
+      padding-top: 120px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,237 @@
+.card{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+
+}
+
+
+.card-title-text {
+    text-align: center; 
+    font-size: 25px;
+    font-family: "FuturaPT2",sans-serif;
+}
+.card-price{
+    font-family: 'FuturaPT2', sans-serif;
+    color: #1e8ff8;
+}
+
+.card-currency{
+    font-family: 'FuturaPT2', sans-serif;
+}
+
+.card-item::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1e8ff8;
+    transform: skewY(345deg);
+    position: absolute;
+    top: -50%;
+    transition: 0.5s;
+    left: 0;
+}
+
+.card-item:hover::before{
+    transform: skewY(390deg);
+    top: -70%;
+    
+}
+
+
+.card-item{
+    display: inline-block;
+    /* min-height: 450px; */
+    background-color: rgb(181, 181, 181);
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.card-img-item{
+    position: relative;
+    transition: 0.5s;
+    margin: 0 auto;
+    height: 150px;
+    transform: scale(1.1);
+    
+}
+
+.card-item:hover .card-img-item{
+    width: 50%;
+}
+
+
+
+.card-name{
+    margin-top: 15px;
+    font-size: 18px;
+    position: relative;
+    font-family: 'FuturaPT2', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+
+.card-subtitle{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #000000;
+}
+
+
+.card-price{
+    font-size: 18px;
+    position: relative;
+}
+
+
+.card-currency{
+    font-size: 18px;
+    color: #000000;
+}
+
+.btn-item{
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+    background: #1e8ff8;
+    padding: 15px 30px;
+    border-radius: 12px;
+    color: inherit;
+    text-transform: inherit;
+    position: relative;
+    margin-top: 15px;
+    
+}
+
+.btn-item:hover{
+    border: 1px solid #767373;
+    transform: scale(1.2);
+    background: linear-gradient(214.02deg, #017BEA 6.4%, #298df0 92.95%);
+}
+
+
+@media(max-width: 500px){
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card-item {
+        flex-shrink: 0; 
+        width: 95%; 
+        margin: 0 auto; 
+    }
+}
+
+
+@media(min-width: 768px){
+    
+.card-title-text {
+    margin-bottom: 50px;
+    text-align: center; 
+    font-size: 40px;
+    font-family: "FuturaPT2",sans-serif;
+}
+.cards-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.card-price{
+    font-family: 'FuturaPT2', sans-serif;
+    color: #1e8ff8;
+}
+
+.card-curency{
+    font-family: 'FuturaPT2', sans-serif;
+}
+
+.card-item::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1e8ff8;
+    transform: skewY(345deg);
+    position: absolute;
+    top: -50%;
+    transition: 0.5s;
+}
+
+.card-item:hover::before{
+    transform: skewY(390deg);
+    top: -70%;
+    
+}
+.card-item{
+    
+    
+    background-color: rgb(181, 181, 181);
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    position: relative;
+    overflow: hidden;
+    width: calc((100% - 20px) / 2);
+    
+
+}
+.card-name{
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    position: relative;
+}
+.card-subtitle{
+    margin-top: 80px;
+}
+.card-price{
+    font-size: 25px;
+    position: relative;
+}
+
+}
+
+
+@media(min-width: 1280px){
+    
+    .cards-container{
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-item{
+        width: calc((100% - 80px) / 3);
+    }
+    .card{
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+}

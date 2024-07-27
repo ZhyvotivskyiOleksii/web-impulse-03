@@ -1,0 +1,24 @@
+.policy{
+    margin-top: 140px;
+    margin-bottom: 140px;
+}
+
+.policy-container h2{
+    font-size: 30px;
+    font-family: "FuturaPT2",sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.policy-container p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "FuturaPT2",sans-serif;
+}
+
+.con-policy ul,li{
+    font-size: 15px;
+    text-align: center;
+    /* margin-bottom: 10px; */
+}

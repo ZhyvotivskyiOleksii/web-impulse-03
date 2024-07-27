@@ -1,0 +1,325 @@
+.company{
+
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+}
+.company-box{
+    text-align: center;
+
+}
+.offering{
+    color: #0078ff;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+    font-family: "FuturaPT2",sans-serif;
+    text-align: center;
+}
+.company-subtitle{
+    display: flex;
+    align-items: center;
+    gap:  12px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+    font-family: "FuturaPT2",sans-serif;
+    justify-content: center;
+}
+
+.company-subtitle::before{
+    content: '';
+    width: 35px;
+    height: 1px;
+    background-color: #1e8ff8;
+    display: block;
+
+}
+
+.company-span-site{
+    font-size: 16px;
+    font-family: "FuturaPT2",sans-serif;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+}
+
+.company-title{
+    margin-bottom: 25px;
+    font-size: 25px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+    font-family: "FuturaPT2",sans-serif;
+    color: #000000;
+}
+
+.company-span{
+    color: #1e8ff8;
+    font-size: 25px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+    font-family: "FuturaPT2",sans-serif;
+}
+
+.company-text{
+   margin-bottom: 25px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+
+}
+
+
+.company-btn {
+    display: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #017BEA; 
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 143%;
+    letter-spacing: -0.01em;
+    color: #fff;
+    border: none; 
+    border-radius: 10px; 
+    font-size: 16px; 
+    cursor: pointer;
+    box-shadow: 10px 10px 20px #0088ff;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    
+
+}
+
+.company-btn:hover {
+    background-color: #0088ff;
+    transition: 0.5s;
+    transform: scale(1.2); 
+}
+
+
+.company-list{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    gap: 12px;
+    text-align: left;
+}
+.company-list:hover{
+    color: #0078ff;
+}
+
+
+
+@media (min-width: 768px){
+
+    .company{
+       margin-top:  40px;
+       padding-top: 40px;
+        
+    }
+    .offering{
+        color: #0078ff;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: 0.04em;
+        font-weight: 800;
+        font-family: "FuturaPT2",sans-serif;
+        
+    
+    }
+    .company-subtitle{
+        
+        gap:  12px;
+        color: rgb(0, 0, 0);
+        font-size: 26px;
+        line-height: 125%;
+        letter-spacing: 0.03em;
+        font-weight: 800;
+        font-family: "FuturaPT2",sans-serif;
+    }
+    
+    .company-subtitle::before{
+        content: '';
+        width: 50px;
+        height: 1px;
+        background-color:#1e8ff8;
+        display: block;
+    
+    }
+    
+    .company-title{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+        margin-bottom: 25px;
+        font-size: 40px;
+        line-height: 125%;
+        letter-spacing: 0.03em;
+        font-weight: 800;
+        font-family: "FuturaPT2",sans-serif;
+    }
+    
+    .company-span{
+        color: #1e8ff8;
+        font-size: 40px;
+        line-height: 125%;
+        letter-spacing: 0.03em;
+        font-weight: 800;
+        font-family: "FuturaPT2",sans-serif;
+    }
+    
+    .company-text{
+        line-height: 125%;
+        letter-spacing: 0.03em;
+        font-size: 21px;
+    
+    }
+    
+    .company-btn {
+        display: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        background-color: #017BEA; 
+        color: white;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 143%;
+        letter-spacing: -0.01em;
+        color: #fff;
+        border: none; 
+        border-radius: 10px; 
+        font-size: 16px; 
+        cursor: pointer;
+        box-shadow: 10px 10px 20px #0088ff;
+        line-height: 125%;
+        letter-spacing: 0.03em;
+        
+    
+    }
+    
+    .company-btn:hover {
+        background-color: #0088ff;
+        transition: 0.5s;
+        transform: scale(1.2); 
+    }
+    
+    .company-main-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 26px;
+    }
+    .company-list{
+        align-items: center;
+        font-size: 20px;
+        line-height: 125%;
+        letter-spacing: 0.03em;
+        gap: 12px;
+        width: calc((100% - 26px) / 2);
+        
+    }
+
+    .company-list-box{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+}
+
+
+
+@media (min-width: 1280px){
+    .company-container{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .company{
+        /* background-image: url('/images/panel.png'); */
+        background-repeat: no-repeat;
+        background-size: 100% ;
+        background-position: center;
+        margin-top: 120px;
+    }
+    .company-container{
+        max-width: 1440px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        gap: 100px;
+        
+    }
+    
+
+
+
+.offering{
+    color: #1e8ff8;
+    font-size: 22px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+    font-family: "FuturaPT2",sans-serif;
+}
+.company-span-site{
+    color: #000000;
+    font-size: 22px;
+    line-height: 125%;
+    letter-spacing: 0.04em;
+    font-weight: 800;
+    font-family: "FuturaPT2",sans-serif;
+}
+.company-span-site::before{
+    flex-shrink: 0;
+}
+.company-title{
+    font-size: 40px;
+    padding-bottom: 23px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+    font-family: "FuturaPT2",sans-serif;
+}
+.company-subtitle{
+    display: flex;
+    align-items: center;
+    gap:  12px;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    padding-bottom: 19px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+    font-family: "FuturaPT2",sans-serif;
+    flex-shrink: 0;
+}
+.company-subtitle::before{
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #1e8ff8;
+    display: block;
+
+} 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  

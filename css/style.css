@@ -1,0 +1,18 @@
+.buttom-box{
+    text-align: center;
+}
+.title-buttom{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 1200px){
+    .buttom-box p{
+        text-align: center;
+        font-size: 20px;
+    }
+    .container-buttom{
+        max-width: 1440px;
+    }
+}
+

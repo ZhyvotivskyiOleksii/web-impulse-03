@@ -1,0 +1,30 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+Disallow: /comments/
+Disallow: /core/
+Disallow: /includes/
+Disallow: /language/
+Disallow: /layouts/
+Disallow: /lib/
+Disallow: /media/
+Disallow: /modules/
+Disallow: /profiles/
+Disallow: /scripts/
+Disallow: /themes/
+Allow: /wp-admin/admin-ajax.php
+Allow: /wp-content/uploads/
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+Allow: /*.css$
+Allow: /*.js$
+
+
+Sitemap: https://web-impuls.com/sitemap.xml

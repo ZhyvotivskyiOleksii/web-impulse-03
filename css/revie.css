@@ -1,0 +1,439 @@
+
+.revie {
+    background-color: #1e8ff8;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.review-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+}
+
+.review {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    background-position: center;
+}
+
+.revie-title {
+    display: flex;
+    color: #000000;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'FuturaPT2', sans-serif;
+    margin-bottom: 20px;
+}
+
+.review-name {
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'FuturaPT2', sans-serif;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-stars {
+    margin: 0 10px;
+    display: flex;
+}
+
+.review-stars img {
+    width: 20px; /* уменьшенный размер звезд */
+    height: 20px; /* уменьшенный размер звезд */
+    margin: 0 5px;
+}
+
+.review-text {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.review-link {
+    color: #ffffff;
+    gap: 2px;
+}
+
+.review-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+.review-link .review-icon {
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+}
+
+.icon-arrow1 {
+    fill: #d3d2d2;
+}
+
+.icon-arrow1:hover {
+    fill: #fff;
+}
+
+.review-buttons {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    
+}
+
+.review-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, .06);
+    padding: 8px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 10px;
+    margin-top: 20px;
+    background-color: #0682f7;
+}
+
+.review-button:hover {
+    background-color: #0381f6;
+}
+
+@media (max-width: 768px) {
+    .review-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .review-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .review-header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-button {
+        margin: 0 5px;
+    }
+
+    .review-name {
+        margin: 0;
+    }
+
+    .review-stars {
+        margin: 10px 0;
+    }
+    .review-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+}
+
+
+
+
+
+
+
+@media (min-width: 768px){
+    .revie{
+        background-color: #1e8ff8;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .review-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 800px;
+        height: 300px; 
+        margin: 0 auto;
+        position: relative;
+        padding: 20px;
+    }
+    .review-header-content{
+        display: block;
+    }
+    .review {
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+        background-position: center;
+    }
+    .revie-title{
+        display: flex;
+        color: #ffffff;
+    
+        justify-content: center;
+        font-size: 40px;
+        font-family: 'FuturaPT2', sans-serif;
+    }
+    .review-name {
+        font-size: 24px;
+        color: #ffffff;
+        font-family: 'FuturaPT2', sans-serif;
+    }
+    
+    .review-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .review-header h3 {
+        margin: 0;
+      }
+      
+      .review-stars {
+        margin: 10px 0;
+        display: flex;
+      }
+      
+      .review-stars img {
+        width: 30px; 
+        height: 30px;
+        margin: 0 5px;
+      }
+      
+      .review-text {
+        margin: 20px 0;
+        font-size: 18px;
+        color: #ffffff;
+      }
+      
+      .review-link {
+        color: #ffffff;
+        text-decoration: underline;
+        gap: 10px;
+      }
+      
+      .review-link:hover {
+        color: rgb(0, 0, 0);
+      }
+      
+      .review-link .review-icon {
+        margin-left: 5px;
+        width: 30px;
+        height: 30px;
+      }
+      
+      .nav-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 90px; 
+        height: 50px;
+      }
+      .icon-arrow1{
+        fill: #d3d2d2;
+      }
+        .icon-arrow1:hover{
+            fill: #fff;
+        }
+      
+      .nav-button.prev {
+        left: 10px;
+      }
+      
+      .nav-button.next {
+        right: 10px;
+      }
+      
+      .review-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; 
+      }
+      
+      .review-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: none;
+        border: 1px solid rgba(255, 255, 255, .06);
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 18px;
+        color: #ffffff;
+        cursor: pointer;
+        margin: 0 10px;
+        background-color: #1e8ff8;
+      }
+      
+      .review-button:hover {
+        background-color: #0381f6;
+        
+    }
+}
+
+
+
+
+
+@media (min-width: 1280px){
+    .revie{
+        background-color: #1e8ff8;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .review-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 800px;
+        height: 300px; 
+        margin: 0 auto;
+        position: relative;
+        padding: 20px;
+    }
+    
+    .review {
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+        background-position: center;
+    }
+    .revie-title{
+        display: flex;
+        color: #ffffff;
+    
+        justify-content: center;
+        font-size: 40px;
+        font-family: 'FuturaPT2', sans-serif;
+    }
+    .review-name {
+        font-size: 28px;
+        color: #ffffff;
+        font-family: 'FuturaPT2', sans-serif;
+    }
+    
+    .review-header-content{
+        display: block;
+    }
+    .review-header h3 {
+        margin: 0;
+    }
+
+.review-stars {
+        margin: 10px 0;
+        display: flex;
+      }
+      
+      .review-stars img {
+        width: 25px; 
+        height: 25px;
+        margin: 0 5px;
+      }
+      
+      .review-text {
+        margin: 20px 0;
+        font-size: 18px;
+        color: #ffffff;
+      }
+      
+      .review-link {
+        color: #ffffff;
+        text-decoration: underline;
+        gap: 10px;
+      }
+      
+      .review-link:hover {
+        color: rgb(0, 0, 0);
+      }
+      
+      .review-link .review-icon {
+        margin-left: 5px;
+        width: 30px;
+        height: 30px;
+      }
+      
+      .nav-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 90px; 
+        height: 50px;
+      }
+      .icon-arrow1{
+        fill: #d3d2d2;
+      }
+        .icon-arrow1:hover{
+            fill: #fff;
+        }
+      
+      .nav-button.prev {
+        left: 10px;
+      }
+      
+      .nav-button.next {
+        right: 10px;
+      }
+      
+      .review-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; 
+      }
+      
+      .review-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: none;
+        border: 1px solid rgba(255, 255, 255, .06);
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 18px;
+        color: #ffffff;
+        cursor: pointer;
+        margin: 0 10px;
+        background-color: #1e8ff8;
+      }
+      
+      .review-button:hover {
+        background-color: #0381f6;
+        
+    }
+} 

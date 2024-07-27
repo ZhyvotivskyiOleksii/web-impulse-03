@@ -1,0 +1,150 @@
+
+.footer{
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.logo-brand{
+    display: block;
+    font-size: 30px;
+    color: #1e8ff8;
+    font-family: "FuturaPT3",sans-serif;
+    letter-spacing: 0.02;
+    line-height: 125%;
+    text-align: center;
+
+
+}
+.logo-footer{
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 0.02;
+    line-height: 125%;
+    font-family: "FuturaPT3",sans-serif;
+}
+
+
+.footer-content-list li{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff; 
+    flex-wrap: wrap;
+}
+.footer-icon {
+    margin-right: 10px;
+    width: 14px; 
+    height: auto; 
+}
+
+.footer a {
+    display: flex;
+    align-items: center;
+    color: inherit;
+}
+
+.footer-content-list{
+    list-style: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 18px; 
+}
+
+.regulamin-list{
+    display: flex;
+    font-size: 12px;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.payment-footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+}
+
+.card-pey{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+.call-to-action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    
+
+
+}
+.arrow-icon{
+    width: 35px;
+    margin-right: 10px;
+}
+
+.call-text{
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+
+@media (min-width: 1280px) {
+        .footer-content-list {
+            display: flex;
+          flex-direction: row;
+          justify-content: center;
+          font-size: 16px;
+        }
+
+        .footer-content-list li {
+        margin: 0 20px;
+        }
+        .regulamin-list{
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .info-footer{
+            border: 1px solid #5c5a5a;
+            padding: 8px 16px;
+            border-radius: 16px;
+        }
+        .info-footer:hover{
+            background-color:#767474;
+        }
+        .payment-footer{
+            font-size: 16px;
+        }
+        .call-to-action{
+            display: none;
+        }
+        .footer-img-pey-1{
+            width: 58px;
+        }
+        .footer-img-pey-2{
+            width: 68px;
+        }
+        .footer-img-pey-3{
+            width: 158px;
+        }
+        .footer-img-pey-4{
+            width: 200px;
+        }
+}
+
