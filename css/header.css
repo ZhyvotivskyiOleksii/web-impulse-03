@@ -186,7 +186,14 @@ header .header-line {
   position: absolute;
 
 }
-
+.header-wrapper {
+  position: absolute;
+  width: 109%;
+  height: 100%;
+  overflow-x: hidden;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 
 header .left-side {
@@ -212,8 +219,8 @@ header .middle-side {
 
 header .right-side {
   background-color: #171924;
-  border-left: 2px solid #6907A8;
-
+  border-left: 4px solid #6907A8;
+  
   padding: 25px 30px;
   right: -100%;
   left: 20%;
