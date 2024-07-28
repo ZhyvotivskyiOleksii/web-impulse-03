@@ -43,12 +43,12 @@ body.dark-mode {
 
 .sunny {
   transform: translateX(30px);
-  background: #fff9c4;
+  background: #fe7524;
 }
 
 .dark {
   transform: translateX(-30px);
-  background: #90caf9;
+  background: #1e8ff8;
 }
 
 .mobile-parent {
@@ -63,7 +63,7 @@ body.dark-mode {
 .parent {
   width: 90px;
   height: 40px;
-  background: #f2f2f2;
+  background: #b8b8b82e;
   border-radius: 15px;
   display: flex;
   display: none;
@@ -73,7 +73,7 @@ body.dark-mode {
   .parent {
     width: 90px;
     height: 40px;
-    background: #f2f2f2;
+    background: #b8b8b82e;
     border-radius: 15px;
     display: flex;
     overflow: hidden;

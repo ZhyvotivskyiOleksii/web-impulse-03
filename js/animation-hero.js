@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   var h1 = document.querySelector('h1');
+  var animatedText = document.querySelector('#animated-text');
+
   var options = {
     root: null,  // относительно вьюпорта
     rootMargin: '0px',
@@ -22,10 +24,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var observer = new IntersectionObserver(handleIntersect, options);
   observer.observe(h1);
-});
 
-document.addEventListener('DOMContentLoaded', function() {
-  var options = {
+  // Настройка Typed.js
+  var typedOptions = {
     strings: ["DESIGNER", "DEVELOPER", "CREATIVE", "IMPULS"],
     typeSpeed: 50,
     backSpeed: 25,
@@ -34,47 +35,49 @@ document.addEventListener('DOMContentLoaded', function() {
     showCursor: false,
     loop: false,
     onComplete: function() {
-      document.querySelector('#animated-text').textContent = 'IMPULS';
+      animatedText.textContent = 'IMPULS';
     }
   };
 
-  var typed; // Переменная для хранения экземпляра Typed.js
-
+  var typed;
   var observerOptions = {
     root: null,
     rootMargin: '0px',
     threshold: 1.0
   };
 
-  var observer = new IntersectionObserver(function(entries, observer) {
+  var textObserver = new IntersectionObserver(function(entries, observer) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
         if (typed) {
           typed.destroy(); // Уничтожаем предыдущий экземпляр Typed.js
         }
-        typed = new Typed("#animated-text", options); // Создаем новый экземпляр Typed.js
+        typed = new Typed("#animated-text", typedOptions); // Создаем новый экземпляр Typed.js
       }
     });
   }, observerOptions);
 
-  observer.observe(document.querySelector('#animated-text'));
+  textObserver.observe(animatedText);
 
+  // GSAP анимация
   $('.hero-down').mousedown(function() {
     gsap.fromTo('.btn-react', { opacity: 0, scale: 0 }, { opacity: 0.25, scale: 1, duration: 0.25, onComplete: function() {
-        gsap.to('.btn-react', { opacity: 0, scale: 0, duration: 0.25 });
-      }
-    });
+      gsap.to('.btn-react', { opacity: 0, scale: 0, duration: 0.25 });
+    }});
   });
 
-  // smooth scroll to div
-  $('a[href*="#"]').not('a[href="#"]').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html,body').animate({ scrollTop: target.offset().top }, 1000);
-        return false;
-      }
+  // Плавная прокрутка к элементу
+  $('a[href*="#"]').not('a[href="#"]').click(function(event) {
+    event.preventDefault();
+    var target = this.hash;
+    var $target = $(target);
+
+    if ($target.length) {
+      $('html, body').stop().animate({
+        scrollTop: $target.offset().top
+      }, 1000, 'swing', function() {
+        window.location.hash = target;
+      });
     }
   });
 });

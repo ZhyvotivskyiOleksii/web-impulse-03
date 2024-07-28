@@ -18,9 +18,16 @@
     content="Замовте розробку сайту у Web-Impuls. Професійний підхід та індивідуальні рішення для кожного клієнта.">
   <meta name="keywords"
     content="Розробка сайтів, Створення веб-сайтів, Розробка інтернет-магазинів, SEO оптимізація, Підтримка сайтів, Адаптивний дизайн, Веб-дизайн, Розробка додатків, Фронтенд розробка, Бекенд розробка, Замовити сайт, Купити сайт, Замовити сайт на WordPress, Замовити сайт на HTML, Разработка сайтов, Создание веб-сайтов, Интернет-магазин разработка, SEO оптимизация, Поддержка сайтов, Адаптивный дизайн, Веб-дизайн, Разработка приложений, Фронтенд разработка, Бекенд разработка, Заказать сайт, Купить сайт, Заказать сайт на WordPress, Заказать сайт на HTML, Tworzenie stron internetowych, Rozwój stron internetowych, Tworzenie sklepów internetowych, Optymalizacja SEO, Utrzymanie stron internetowych, Projektowanie responsywne, Projektowanie stron internetowych, Rozwój aplikacji, Rozwój frontendu, Rozwój backendu, Zamówić stronę, Kupić stronę, Zamówić stronę na WordPress, Zamówić stronę na HTML, Web development services, Website design, E-commerce website development, SEO optimization, Website maintenance, Responsive design, Web design, App development, Frontend development, Backend development, Hire web developer, Custom web development, WordPress website development, Mobile app development, Web application development, Shopify website development, Website redesign services, PHP web development services, JavaScript web development services, React web development services, Angular web development services, Vue.js web development services, Laravel web development services, Django web development services, ASP.NET web development services, Node.js web development services, Magento website development, Web development project outsourcing, Web development project management, Web development consulting services, Website development timeline, Web development cost calculator, Website development cost estimate, Website development project management, Web development hourly rate, Web development cost per hour, Web development cost per project, Website development cost per page, Web development cost breakdown, Website development payment terms, Web development payment schedule, Website development contract template, Web development project management software, Website development project management tools, What is web development, How to become a web developer, Skills required for web development, What is front-end web development, What is back-end web development, How to create a website privacy policy, Order a website, Buy a website, Order a website on WordPress, Order a website on HTML">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Подключение GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Подключение Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+
+
+
 
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/modal-block.css" />
@@ -41,7 +48,7 @@
   <link rel="stylesheet" href="./css/footer.css" />
   <link rel="stylesheet" href="./css/policy.css" />
   <link rel="stylesheet" href="./css/dark-mod.css" />
-  
+
 
 
   <title>Digital Web-Impulse</title>
@@ -49,118 +56,102 @@
 
 <body>
   <!-- ==========================header============================== -->
-  
+
   <header>
     <div class="left-side header-line">
         <div class="container">
           <a href="./index.html"><img id="logoHeader" class="logo-modal-header" src="./images/logo-new.png"
             alt="logo-modal"></a>
-
         </div>
-        
         <div class="header-wrapper">
-              <div class="middle-side header-line">
-                <nav class="navbar-menu">
+
+            <div class="middle-side header-line">
+                <nav class="navbar">
                   <ul class="header-list">
                     <li><a href="./services.html" class="nav-menu-item current" data-translate-key="services">Послуги</a></li>
                     <li><a href="./prices.html" class="nav-menu-item current" data-translate-key="prices">Ціни</a></li>
                     <li><a href="./reviews.html" class="nav-menu-item current" data-translate-key="reviews">Відгуки</a></li>
                     <li><a href="./contact.html" class="nav-menu-item current" data-translate-key="contact">Контакт</a></li>
+                    
                   </ul>
                 </nav>
-                
+
 
                 <div class="right-side header-line">
-                  <ul class="icon-social-list">
-                    <li>
-                      <a href="https://www.facebook.com/people/Web-impuls/61559794323482/?mibextid=LQQJ4d" target="_blank"
-                        class="mob-icon-link">
-                        <svg class="icon-social-header" width="21" height="21">
-                          <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/in/oleksiy-zhivotivsky-9b9085303/" target="_blank" class="mob-icon-link">
-                        <svg class="icon-social-header" width="21" height="21">
-                          <use href="./images/icons.svg#icon-linkedin2"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/ZhyvotivskyiOleksii" target="_blank" class="mob-icon-link">
-                        <svg class="icon-social-header" width="22" height="22">
-                          <use href="./images/icons.svg#icon-github"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+                  <div class="language-switcher header-language-switcher">
+                    
+                    <div class="address-box">
+                      <ul class="address-list">
+                        <li class="mob-icon-team-media">
+                          <a href="https://www.facebook.com/people/Web-impuls/61559794323482/?mibextid=LQQJ4d" target="_blank"
+                            class="mob-icon-link">
+                            <svg class="icon-social-header" width="21" height="21">
+                              <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="mob-icon-team-media">
+                          <a href="https://www.linkedin.com/in/oleksiy-zhivotivsky-9b9085303/" target="_blank" class="mob-icon-link">
+                            <svg class="icon-social-header" width="21" height="21">
+                              <use href="./images/icons.svg#icon-linkedin2"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="mob-icon-team-media">
+                          <a href="https://github.com/ZhyvotivskyiOleksii" target="_blank" class="mob-icon-link">
+                            <svg class="icon-social-header" width="22" height="22">
+                              <use href="./images/icons.svg#icon-github"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    
+                    
+                  </div>
+                  <div class="parent">
+                    <div class="switch">
+                      <div class="switcher dark"></div>
+                      <div class="night">
+                        <img src="/svg/moon.svg" alt="moon icon" class="icon-switch">
+                      </div>
+                      <div class="sun">
+                        <img src="/svg/sun.svg" alt="sun icon" class="icon-switch">
+                      </div>
+                    </div>
+                  </div>
 
-            
-            <div class="language-switcher header-language-switcher">
-              <button id="languageButtonHeader">
-                  <img class="translate-icon" src="./svg/language.svg" width="35" height="60" alt="Language" class="icon">
-                  <span id="titleHeader">Language</span>
-              </button>
-              <div id="languageMenuHeader" class="language-menu">
-                <a href="#" data-lang="en"><img src="./svg/usa.svg" width="20" height="20" alt="English"> English</a>
-                <a href="#" data-lang="pl"><img src="./svg/poland.svg" width="20" height="20" alt="Polski"> Polish</a>
-                <a href="#" data-lang="uk"><img src="./svg/ua.svg" width="22" height="22" alt="Українська"> Українська</a>
-              </div>
-            </div>
-            <button class="js-open-menu open-menu-btn" type="button"><img id="burger" src="../images/burger.svg" /></button>
-            <div class="parent">
-              <div class="switch">
-                <div class="switcher dark"></div>
-                <div class="night">
-                  <img src="/svg/moon.svg" alt="moon icon" class="icon-switch">
+                  <div class="language-switcher header-language-switcher">
+                    <button id="languageButtonHeader">
+                        <img class="translate-icon" src="./svg/language1.svg" width="35" height="60" alt="Language" class="icon">
+                        <span id="titleHeader">Language</span>
+                    </button>
+                    <div id="languageMenuHeader" class="language-menu">
+                      <a href="#" data-lang="en"><img src="./svg/usa.svg" width="20" height="20" alt="English"> English</a>
+                      <a href="#" data-lang="pl"><img src="./svg/poland.svg" width="20" height="20" alt="Polski"> Polish</a>
+                      <a href="#" data-lang="uk"><img src="./svg/ua.svg" width="22" height="22" alt="Українська"> Українська</a>
+                    </div>
+                  </div>
+                  
                 </div>
-                <div class="sun">
-                  <img src="/svg/sun.svg" alt="sun icon" class="icon-switch">
+                  <button class="js-open-menu open-menu-btn" type="button"><img id="burger" src="./svg/menu.svg" /></button>
                 </div>
-              </div>
-            </div>
-          </div>
-              </div>
             </div>
         </div>
-
     </div>
+
 </header>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
-
-
-
-
-
-    
-
-  <!-- ==================mob-menu======================== -->
+<!-- ==================mob-menu ======== -->
   <nav class="navbar-m js-menu-container">
     <div class="mobile-menu-box">
 
-     
-      <a href="./index.html"><img id="logoMobile" class="logo-menu-mob" src="./images/logo-new.png" alt="logo-modal"></a>
+      
+      <a href="./index.html"><img id="logoMobile" class="logo-menu-mob" src="./svg/logo-en.svg" alt="logo-modal"></a>
 
       <button class="js-close-menu close-menu-btn" type="button"><img id="burger"
-          src="../images/menu-of.svg" /></button>
+          src="./svg/closs.svg" /></button>
     </div>
 
     <div class="menu-m">
@@ -180,10 +171,10 @@
           <div class="switch">
             <div class="switcher dark"></div>
             <div class="night">
-              <img src="./svg/moon.svg" alt="moon icon" class="icon-switch">
+              <img src="/svg/moon.svg" alt="moon icon" class="icon-switch">
             </div>
             <div class="sun">
-              <img src="./svg/sun.svg" alt="sun icon" class="icon-switch">
+              <img src="/svg/sun.svg" alt="sun icon" class="icon-switch">
             </div>
           </div>
         </div>
@@ -213,12 +204,8 @@
             <span class="gift-title" data-translate-key="contact">Контакт</span>
           </a>
         </li>
-        <!-- <li>
-          <a href="./promotions.html">
-            <img src="../svg/gift.svg" width="30" height="30" alt="Главная">
-            <span class="gift-title" data-translate-key="promotions">Акції</span>
-          </a>
-        </li> -->
+        <li>
+        </li>
       </ul>
     </div>
 
@@ -262,6 +249,7 @@
 
 
     <!-- =========================hero-section========================= -->
+
     <section class="hero">
       <div class="container hero-container">
         <div class="hero-box">
@@ -563,7 +551,7 @@
     <!-- Modal for current form (without card) -->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <img class="logo-modal" src="./svg/logo-modal1.svg" alt="logo-modal">
+        <img class="logo-modal" src="./svg/logo-en.svg" alt="logo-modal">
         <button type="button" data-modal-close class="modal-close-btn">
           <svg class="modal-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
@@ -886,7 +874,6 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <script src="./js/media-button.js"></script>
   <script src="./js/menu.js"></script>
