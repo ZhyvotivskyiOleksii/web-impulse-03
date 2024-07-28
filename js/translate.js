@@ -859,10 +859,10 @@ const translations = {
     });
   
     // Обновляем логотипы
-    const logoHeader = document.getElementById('logoHeader');
-    const logoMobile = document.getElementById('logoMobile');
-    if (logoHeader) logoHeader.src = translations[lang].logo;
-    if (logoMobile) logoMobile.src = translations[lang].logo;
+    // const logoHeader = document.getElementById('logoHeader');
+    // const logoMobile = document.getElementById('logoMobile');
+    // if (logoHeader) logoHeader.src = translations[lang].logo;
+    // if (logoMobile) logoMobile.src = translations[lang].logo;
   
     // Обновляем URL
     const currentUrl = new URL(window.location);
