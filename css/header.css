@@ -1,8 +1,9 @@
 
 
 header {
-  position: relative;
-  margin-top: 20px;
+  position: fixed;
+  top: 20px;
+  z-index: 1000;
   
 }
 
@@ -192,30 +193,14 @@ width: 80%;
   display: none;
 } 
 
-@media (min-width: 768px) {
-  .navbar {
-    display: none;
-  }
 
-  .media-m {
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-  .media-m {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 120px;
-  }
-  .logo-modal-header {
-    width: 200px;
-  }
-}
 
 @media (min-width: 1280px) {
 .open-menu-btn{
   display: none;
+}
+.nav-menu-item.current{
+  display: block;
 }
 .navbar-m{
   display: none;
