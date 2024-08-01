@@ -60,7 +60,7 @@
   <header>
     <div class="left-side header-line">
         <div class="container">
-          <a href="./index.html"><img id="logoHeader" class="logo-modal-header" src="./images/logo-new.png"
+          <a href="./index.html"><img id="logoHeader" class="logo-modal-header" src="./svg/logo-web.svg"
             alt="logo-modal"></a>
         </div>
         <div class="header-wrapper">
@@ -78,6 +78,7 @@
 
 
                 <div class="right-side header-line">
+                  <button class="js-open-menu open-menu-btn" type="button"><img id="burger" src="./svg/menu.svg" /></button>
                   <div class="language-switcher header-language-switcher">
                     
                     <div class="address-box">
@@ -135,115 +136,132 @@
                   </div>
                   
                 </div>
-                  <button class="js-open-menu open-menu-btn" type="button"><img id="burger" src="./svg/menu.svg" /></button>
+                  
                 </div>
             </div>
         </div>
     </div>
 
+
+    <div class="navbar-m js-menu-container">
+      <div class="mobile-menu-box">
+  
+      
+        <a href="./index.html"><img id="logoMobile" class="logo-menu-mob" src="./svg/logo-en.svg" alt="logo-modal"></a>
+  
+        <button class="js-close-menu close-menu-btn" type="button"><img id="burger"
+            src="./svg/closs.svg" /></button>
+      </div>
+  
+      <div class="menu-m">
+        <div class="language-switcher mobile-language-switcher">
+          <button id="languageButtonMobile">
+            <div class="icon-container">
+              <img src="./svg/translate.svg" width="80" height="30" alt="Language" class="icon">
+              <p id="titleMobile">Language</p>
+            </div>
+          </button>
+          <div id="languageMenuMobile" class="language-menu">
+            <a href="#" data-lang="en"><img src="./svg/usa.svg" width="20" height="20" alt="English"> English</a>
+            <a href="#" data-lang="pl"><img src="./svg/poland.svg" width="20" height="20" alt="Polski"> Polish</a>
+            <a href="#" data-lang="uk"><img src="./svg/ua.svg" width="22" height="22" alt="Українська"> Українська</a>
+          </div>
+          <div class="mobile-parent">
+            <div class="switch">
+              <div class="switcher dark"></div>
+              <div class="night">
+                <img src="/svg/moon.svg" alt="moon icon" class="icon-switch">
+              </div>
+              <div class="sun">
+                <img src="/svg/sun.svg" alt="sun icon" class="icon-switch">
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <a href="./services.html">
+              <img src="../svg/menu-cheader.svg" width="30" height="30" alt="Главная">
+              <span class="gift-title" data-translate-key="services">Послуги</span>
+            </a>
+          </li>
+          <li>
+            <a href="./prices.html">
+              <img src="../images/onas.svg" width="30" height="30" alt="Главная">
+              <span class="gift-title" data-translate-key="prices">Ціни</span>
+            </a>
+          </li>
+          <li>
+            <a href="./reviews.html">
+              <img src="../images/blog.svg" width="30" height="30" alt="Главная">
+              <span class="gift-title" data-translate-key="reviews">Відгуки</span>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html">
+              <img src="../images/contact.svg" width="30" height="30" alt="Главная">
+              <span class="gift-title" data-translate-key="contact">Контакт</span>
+            </a>
+          </li>
+          <li>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="nav-mob-contakt">
+        <ul class="mob-address-list">
+          <li class="mob-contact"><a href="tel:+48796238044" class="mob-menu-address active">+48 572 245 57</a></li>
+          <li class="mob-contact"><a href="mailto:info@web-impuls.com" class="mob-menu-address">info@web-impuls.com</a>
+          </li>
+          <li>
+            <p>Warszawa Mazovia</p>
+          </li>
+        </ul>
+      </div>
+      <div class="media-m">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/people/Web-impuls/61559794323482/?mibextid=LQQJ4d" target="_blank"
+              class="form-icon">
+              <img src="../svg/form.fb.svg" width="75" alt="fb">
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/WebImpuls" target="_blank" class="form-icon">
+              <img src="../svg/form-tel.svg" width="75" alt="Иконка">
+            </a>
+          </li>
+          <li>
+            <a href="https://example.com" target="_blank" class="form-icon">
+              <img src="../svg/form-wat.svg" width="75" alt="Иконка">
+            </a>
+          </li>
+          <a href="https://www.linkedin.com/in/oleksiy-zhivotivsky-9b9085303/" target="_blank" class="form-icon">
+            <img src="./svg/linkedin.svg" width="75" alt="Иконка">
+          </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </header>
 
 <!-- ==================mob-menu ======== -->
-  <nav class="navbar-m js-menu-container">
-    <div class="mobile-menu-box">
-
-      
-      <a href="./index.html"><img id="logoMobile" class="logo-menu-mob" src="./svg/logo-en.svg" alt="logo-modal"></a>
-
-      <button class="js-close-menu close-menu-btn" type="button"><img id="burger"
-          src="./svg/closs.svg" /></button>
-    </div>
-
-    <div class="menu-m">
-      <div class="language-switcher mobile-language-switcher">
-        <button id="languageButtonMobile">
-          <div class="icon-container">
-            <img src="./svg/translate.svg" width="80" height="30" alt="Language" class="icon">
-            <p id="titleMobile">Language</p>
-          </div>
-        </button>
-        <div id="languageMenuMobile" class="language-menu">
-          <a href="#" data-lang="en"><img src="./svg/usa.svg" width="20" height="20" alt="English"> English</a>
-          <a href="#" data-lang="pl"><img src="./svg/poland.svg" width="20" height="20" alt="Polski"> Polish</a>
-          <a href="#" data-lang="uk"><img src="./svg/ua.svg" width="22" height="22" alt="Українська"> Українська</a>
-        </div>
-        <div class="mobile-parent">
-          <div class="switch">
-            <div class="switcher dark"></div>
-            <div class="night">
-              <img src="/svg/moon.svg" alt="moon icon" class="icon-switch">
-            </div>
-            <div class="sun">
-              <img src="/svg/sun.svg" alt="sun icon" class="icon-switch">
-            </div>
-          </div>
-        </div>
-      </div>
-      <ul>
-        <li>
-          <a href="./services.html">
-            <img src="../svg/menu-cheader.svg" width="30" height="30" alt="Главная">
-            <span class="gift-title" data-translate-key="services">Послуги</span>
-          </a>
-        </li>
-        <li>
-          <a href="./prices.html">
-            <img src="../images/onas.svg" width="30" height="30" alt="Главная">
-            <span class="gift-title" data-translate-key="prices">Ціни</span>
-          </a>
-        </li>
-        <li>
-          <a href="./reviews.html">
-            <img src="../images/blog.svg" width="30" height="30" alt="Главная">
-            <span class="gift-title" data-translate-key="reviews">Відгуки</span>
-          </a>
-        </li>
-        <li>
-          <a href="./contact.html">
-            <img src="../images/contact.svg" width="30" height="30" alt="Главная">
-            <span class="gift-title" data-translate-key="contact">Контакт</span>
-          </a>
-        </li>
-        <li>
-        </li>
-      </ul>
-    </div>
-
-    <div class="nav-mob-contakt">
-      <ul class="mob-address-list">
-        <li class="mob-contact"><a href="tel:+48796238044" class="mob-menu-address active">+48 572 245 57</a></li>
-        <li class="mob-contact"><a href="mailto:info@web-impuls.com" class="mob-menu-address">info@web-impuls.com</a>
-        </li>
-        <li>
-          <p>Warszawa Mazovia</p>
-        </li>
-      </ul>
-    </div>
-    <div class="media-m">
-      <ul>
-        <li>
-          <a href="https://www.facebook.com/people/Web-impuls/61559794323482/?mibextid=LQQJ4d" target="_blank"
-            class="form-icon">
-            <img src="../svg/form.fb.svg" width="75" alt="fb">
-          </a>
-        </li>
-        <li>
-          <a href="https://t.me/WebImpuls" target="_blank" class="form-icon">
-            <img src="../svg/form-tel.svg" width="75" alt="Иконка">
-          </a>
-        </li>
-        <li>
-          <a href="https://example.com" target="_blank" class="form-icon">
-            <img src="../svg/form-wat.svg" width="75" alt="Иконка">
-          </a>
-        </li>
-        <a href="https://www.linkedin.com/in/oleksiy-zhivotivsky-9b9085303/" target="_blank" class="form-icon">
-          <img src="./svg/linkedin.svg" width="75" alt="Иконка">
-        </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
   <main>
 
